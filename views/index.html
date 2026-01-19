@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="app-title"> Champions Blog</h1>
+
+    <!-- Form -->
+    <div class="card form-card">
+      <h1>Share Your Results</h1>
+      <form id="blogForm">
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="body" placeholder="Body" rows="5" required></textarea>
+        <input type="text" id="author" placeholder="Author (optional)" />
+        <button type="submit">Submit</button>
+        <div id="errorMsg" class="error"></div>
+      </form>
+    </div>
+    <div id="blogs" class="blogs-list"></div>
+
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
